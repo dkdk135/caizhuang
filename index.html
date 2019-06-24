@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<style>
+		/* *星号：通配符 匹配所有元素 */
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		body{
+			background-color: #eee7e1;
+		}
+		ul{
+			font-size: 12px;
+		}
+		#main{
+			background-color: white;
+			width: 255px;
+		}
+		#title{
+			color: white;
+			background-color: #e9185a;
+			height: 35px;
+			line-height: 35px;
+			padding-left: 10px;
+			font-size: 13px;
+			font-weight: bold;
+		}
+		#main div span{
+			font-size: 14px;
+		}
+		li{
+			border-bottom: 1px dimgrey dashed;
+			-height: 30px;
+			line-height: 30px;
+		}
+		a{
+			/* a标签是一个行内元素，不读占一行，不能设置行高 */
+			text-decoration: none;
+			color: dimgray;
+			background-image: url(img/dot_01.gif);
+			background-repeat: no-repeat;
+			background-position: 0px 2px;
+			/* 用display来设置a标签为块状元素，来设置高度宽度 */
+			display: block;
+			-height: 30px;
+		}
+		#main li span{
+			color: #FFFFFF;
+			margin: 0px 10px;
+		}
+		.pic{
+			display: none;
+			text-align: center;
+		}
+		a:hover .pic{
+			display: block;
+		}
+		a:hover{
+			background-image: url(img/dot_02.gif);
+			color: #E9185A;
+		}
+	</style>
+	<body>
+		<div id="main">
+			<!-- 标题 -->
+			<div id="title">大家都喜欢的彩<span>妆</span></div>
+			<!-- 菜单，无序列表 -->
+			<ul>
+				<li><a href="#"><span>1</span>Za姬芮新能真皙美白隔离霜 35g
+				<div class="pic">
+					<img src="img/icon-1.jpg" />
+					<div>￥62.00  最近69122人购买</div>
+				</div>
+				
+				</a></li>
+				<li><a href="#"><span>2</span>美宝莲精纯矿物奇妙新颜乳霜BB霜 30ml
+				<div class="pic">
+					<img src="img/icon-2.jpg" />
+					<div>￥89.00  最近13610人购买</div>
+				</div>
+				</a></li>
+				<li><a href="#"><span>3</span>菲奥娜水漾CC霜40g<div class="pic">
+					<img src="img/icon-3.jpg" />
+					<div>￥59.90  最近13403人购买</div>
+				</div>
+				</a></li>
+				<li><a href="#"><span>4</span>DHC 蝶翠诗橄榄卸妆油 200ml<div class="pic">
+					<img src="img/icon-4.jpg" />
+					<div>￥169.00  最近16757人购买</div>
+				</div>
+				</a></li>
+			</ul>
+		</div>
+	</body>
+</html>
